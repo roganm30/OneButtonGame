@@ -18,6 +18,8 @@ public class Spider : MonoBehaviour
     float reattachTimer;
     bool hitCeiling = false;
 
+    Animator anim;
+
     public GameObject floorCollider;
     public float previousY;
     public float currentY;
@@ -26,6 +28,7 @@ public class Spider : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         web = GetComponentInChildren<Web>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -35,11 +38,15 @@ public class Spider : MonoBehaviour
         currentY = transform.position.y;
 
         if (transform.position.x < -6f)
+        {
             isDead = true;
+            anim.SetBool("Dead", true);
+        }
 
         if (isDead)
         {
             rb.constraints = RigidbodyConstraints2D.None;
+            rb.gravityScale = 1;
             if (floorCollider != null)
                 Destroy(floorCollider);
             return;
@@ -65,6 +72,7 @@ public class Spider : MonoBehaviour
 
         if (!attached)
         {
+            anim.SetBool("Attached", false);
             webCreated = false;
             reAttaching = false;
             rb.gravityScale = 1;
@@ -75,6 +83,8 @@ public class Spider : MonoBehaviour
                 reattach();
             }
         }
+        else
+            anim.SetBool("Attached", true);
 
         if (reAttaching && currentY == previousY)
         {
