@@ -9,6 +9,7 @@ public class Deathscreen : MonoBehaviour
     public GameObject deathScreen;
 
     Spider spider;
+    public bool winScreen = false;
 
     void Start()
     {
@@ -36,6 +37,9 @@ public class Deathscreen : MonoBehaviour
             Application.Quit();
         }
 
-        finalScore.text = "Final Score:\n" + scoreScript.score.ToString() + "\n \nPress SPACE to restart or ESC to quit.";
+        if (!winScreen)
+            finalScore.text = "Final Score:\n" + scoreScript.score.ToString() + "\n \nPress SPACE to restart or ESC to quit.";
+        else
+            finalScore.text = "You win! Final Score:\n" + scoreScript.score.ToString() + "\n \nPress SPACE to restart or ESC to quit.";
     }
 }
