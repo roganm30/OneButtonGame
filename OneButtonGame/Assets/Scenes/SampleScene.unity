@@ -463,7 +463,7 @@ GameObject:
   - component: {fileID: 491091323}
   - component: {fileID: 491091325}
   - component: {fileID: 491091326}
-  - component: {fileID: 491091328}
+  - component: {fileID: 491091327}
   m_Layer: 6
   m_Name: Web
   m_TagString: Untagged
@@ -483,7 +483,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 0.37, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1566826396}
   m_Father: {fileID: 719527141}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &491091323
@@ -605,7 +606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Web
   spriteEnabled: 1
   parameter: 1
---- !u!114 &491091328
+--- !u!114 &491091327
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -620,14 +621,14 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1158421664
-      Data2: 1115061902
-      Data3: -975685187
-      Data4: -296780207
-    Path: event:/skateboard-rolling
+      Data1: -2034442955
+      Data2: 1114549998
+      Data3: -161547644
+      Data4: -317670686
+    Path: event:/web-snap
   Event: 
-  EventPlayTrigger: 1
-  EventStopTrigger: 2
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -1033,6 +1034,7 @@ GameObject:
   m_Component:
   - component: {fileID: 709084927}
   - component: {fileID: 709084928}
+  - component: {fileID: 709084929}
   m_Layer: 0
   m_Name: Audio Manager
   m_TagString: Untagged
@@ -1069,6 +1071,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioListener
   nonRigidbodyVelocity: 0
   attenuationObject: {fileID: 0}
+--- !u!114 &709084929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709084926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1610270373
+      Data2: 1288379333
+      Data3: -2014766431
+      Data4: 185832465
+    Path: event:/bgm-music
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &719527137
 GameObject:
   m_ObjectHideFlags: 0
@@ -1250,8 +1283,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 982485f3c5f255142a71820b3dd0bee2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Spider
+  descendSpeed: 1
+  reattachSpeed: 1
   attached: 1
-  ceiling: {fileID: 0}
+  isDead: 0
+  floorCollider: {fileID: 0}
+  previousY: 0
+  currentY: 0
 --- !u!114 &719527143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1662,6 +1700,83 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1566826395
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1566826396}
+  - component: {fileID: 1566826398}
+  - component: {fileID: 1566826397}
+  m_Layer: 6
+  m_Name: Skateboard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1566826396
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566826395}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.452, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 491091322}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1566826397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566826395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1158421664
+      Data2: 1115061902
+      Data3: -975685187
+      Data4: -296780207
+    Path: event:/skateboard-rolling
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1566826398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566826395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f7ceaae7d6cb4d45a6b81012d8655ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Skateboard
+  parameter: 1
 --- !u!1 &1576730338
 GameObject:
   m_ObjectHideFlags: 0

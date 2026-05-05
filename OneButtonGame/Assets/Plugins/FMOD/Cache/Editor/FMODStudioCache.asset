@@ -82,33 +82,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3000
---- !u!114 &-4823647940916257250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/menu-cancel
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/menu-cancel
-  Guid:
-    Data1: -1782475781
-    Data2: 1085597964
-    Data3: -2004099931
-    Data4: 1583286492
-  Banks:
-  - {fileID: 5277862947616582299}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 250
 --- !u!114 &-3231845272951946345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,45 +127,48 @@ MonoBehaviour:
   EditorEvents:
   - {fileID: -3231845272951946345}
   - {fileID: -8022213301838379405}
-  - {fileID: 7676469394329127851}
   - {fileID: 1250999368898319348}
   - {fileID: 2955897286607135298}
   - {fileID: 6994206121235413881}
   - {fileID: -8384090439158204666}
   - {fileID: -6320697363516495291}
-  - {fileID: 6339705339165047637}
   - {fileID: 418364667657012695}
-  - {fileID: -4823647940916257250}
+  - {fileID: 6744862427571310074}
+  - {fileID: 1689778725872101445}
+  - {fileID: 7597518431988926817}
+  - {fileID: 5737778060918325294}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5277862947616582299}
   StringsBanks:
   - {fileID: 7771935489256472391}
   cacheVersion: 131848
-  cacheTime: 639135872074423264
+  cacheTime: 639135965158342804
   SerializableEventsDict:
   - key: event:/web-snap
     index: 0
   - key: event:/collect-bug
     index: 1
-  - key: event:/pause
-    index: 2
   - key: event:/spider-scuttering
-    index: 3
+    index: 2
   - key: event:/player-death
-    index: 4
+    index: 3
   - key: event:/web-zip
-    index: 5
+    index: 4
   - key: event:/player-land
-    index: 6
+    index: 5
   - key: event:/skateboard-rolling
-    index: 7
-  - key: event:/menu-confirm
-    index: 8
+    index: 6
   - key: event:/collect-coin
+    index: 7
+  - key: event:/bgm-music
+    index: 8
+  - key: event:/pause
     index: 9
-  - key: event:/menu-cancel
+  - key: event:/menu-confirm
     index: 10
+  - key: event:/menu-cancel
+    index: 11
 --- !u!114 &418364667657012695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,6 +223,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2500
+--- !u!114 &1689778725872101445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/pause
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/pause
+  Guid:
+    Data1: 1946603358
+    Data2: 1287794856
+    Data3: -1254760515
+    Data4: 1983244889
+  Banks:
+  - {fileID: 5277862947616582299}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 250
 --- !u!114 &2955897286607135298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -315,12 +318,12 @@ MonoBehaviour:
   Path: OneButtonGame-FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639135872074334334
+  lastModified: 639135965158327642
   FileSizes:
   - Name: Desktop
-    Value: 135552
+    Value: 851360
   Exists: 1
---- !u!114 &6339705339165047637
+--- !u!114 &5737778060918325294
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -330,14 +333,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/menu-confirm
+  m_Name: event:/menu-cancel
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/menu-confirm
+  Path: event:/menu-cancel
   Guid:
-    Data1: -936781123
-    Data2: 1247546883
-    Data3: 1625116819
-    Data4: -1862525144
+    Data1: -1782475781
+    Data2: 1085597964
+    Data3: -2004099931
+    Data4: 1583286492
   Banks:
   - {fileID: 5277862947616582299}
   IsStream: 0
@@ -346,7 +349,34 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 200
+  Length: 250
+--- !u!114 &6744862427571310074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/bgm-music
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/bgm-music
+  Guid:
+    Data1: 1610270373
+    Data2: 1288379333
+    Data3: -2014766431
+    Data4: 185832465
+  Banks:
+  - {fileID: 5277862947616582299}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 61714
 --- !u!114 &6994206121235413881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -374,7 +404,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
---- !u!114 &7676469394329127851
+--- !u!114 &7597518431988926817
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -384,14 +414,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/pause
+  m_Name: event:/menu-confirm
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/pause
+  Path: event:/menu-confirm
   Guid:
-    Data1: 1946603358
-    Data2: 1287794856
-    Data3: -1254760515
-    Data4: 1983244889
+    Data1: -936781123
+    Data2: 1247546883
+    Data3: 1625116819
+    Data4: -1862525144
   Banks:
   - {fileID: 5277862947616582299}
   IsStream: 0
@@ -400,7 +430,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 250
+  Length: 200
 --- !u!114 &7771935489256472391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -416,8 +446,8 @@ MonoBehaviour:
   Path: OneButtonGame-FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639135872074423264
+  lastModified: 639135965158342804
   FileSizes:
   - Name: Desktop
-    Value: 1304
+    Value: 1344
   Exists: 1

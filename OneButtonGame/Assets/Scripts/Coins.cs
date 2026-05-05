@@ -29,6 +29,7 @@ public class Coins : MonoBehaviour
         if (collision.gameObject == player)
         {
             score.score += 10;
+            GetComponent<FMODUnity.StudioEventEmitter>().Play();
             Destroy(gameObject);
         }
     }

@@ -23,23 +23,26 @@ public class Web : MonoBehaviour
     {
         sr.enabled = spriteEnabled;
 
-        if (spider.attached == true)
-        {
-            emitter.SetParameter("Skateboard", 1);
-        } 
-        else if (spider.attached == false)
-        {
-            emitter.SetParameter("Skateboard", 0);
-        }
+        //if (spider.attached == true)
+        //{
+        //    emitter.SetParameter("Skateboard", 1);
+        //} 
+        //else if (spider.attached == false)
+        //{
+        //    emitter.SetParameter("Skateboard", 0);
+        //}
 
         
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         UnityEngine.Debug.Log("snap web");
         spider.attached = false;
         spriteEnabled = false;
+
+        GetComponent<FMODUnity.StudioEventEmitter>().Play();
+
     }
 
 }
