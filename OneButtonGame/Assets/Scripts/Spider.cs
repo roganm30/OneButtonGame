@@ -34,7 +34,7 @@ public class Spider : MonoBehaviour
 
         currentY = transform.position.y;
 
-        if (transform.position.x < -5.3f)
+        if (transform.position.x < -6f)
             isDead = true;
 
         if (isDead)
@@ -91,7 +91,7 @@ public class Spider : MonoBehaviour
         if (reAttaching)
         {
             //transform.position += new Vector3(0, reattachSpeed * 10 * Time.deltaTime, 0);
-            rb.gravityScale = -1;
+            rb.gravityScale = -1.5f;
             if (transform.position.y > 3.999f || hitCeiling)
             {
                 rb.constraints = RigidbodyConstraints2D.FreezePositionY;
