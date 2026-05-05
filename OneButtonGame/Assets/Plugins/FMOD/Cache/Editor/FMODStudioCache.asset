@@ -1,5 +1,140 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8384090439158204666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/player-land
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/player-land
+  Guid:
+    Data1: 427498386
+    Data2: 1082316156
+    Data3: -762092906
+    Data4: 1320282649
+  Banks:
+  - {fileID: 5277862947616582299}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 250
+--- !u!114 &-8022213301838379405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/collect-bug
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/collect-bug
+  Guid:
+    Data1: -526926531
+    Data2: 1107601135
+    Data3: -439235431
+    Data4: 1108994258
+  Banks:
+  - {fileID: 5277862947616582299}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 700
+--- !u!114 &-6320697363516495291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/skateboard-rolling
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/skateboard-rolling
+  Guid:
+    Data1: 1158421664
+    Data2: 1115061902
+    Data3: -975685187
+    Data4: -296780207
+  Banks:
+  - {fileID: 5277862947616582299}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3000
+--- !u!114 &-4823647940916257250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/menu-cancel
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/menu-cancel
+  Guid:
+    Data1: -1782475781
+    Data2: 1085597964
+    Data3: -2004099931
+    Data4: 1583286492
+  Banks:
+  - {fileID: 5277862947616582299}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 250
+--- !u!114 &-3231845272951946345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/web-snap
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/web-snap
+  Guid:
+    Data1: -2034442955
+    Data2: 1114549998
+    Data3: -161547644
+    Data4: -317670686
+  Banks:
+  - {fileID: 5277862947616582299}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 350
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,15 +150,129 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: 7771935489256472391}
   - {fileID: 5277862947616582299}
-  EditorEvents: []
+  EditorEvents:
+  - {fileID: -3231845272951946345}
+  - {fileID: -8022213301838379405}
+  - {fileID: 7676469394329127851}
+  - {fileID: 1250999368898319348}
+  - {fileID: 2955897286607135298}
+  - {fileID: 6994206121235413881}
+  - {fileID: -8384090439158204666}
+  - {fileID: -6320697363516495291}
+  - {fileID: 6339705339165047637}
+  - {fileID: 418364667657012695}
+  - {fileID: -4823647940916257250}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5277862947616582299}
   StringsBanks:
   - {fileID: 7771935489256472391}
   cacheVersion: 131848
-  cacheTime: 639134986794804940
-  SerializableEventsDict: []
+  cacheTime: 639135138045358066
+  SerializableEventsDict:
+  - key: event:/web-snap
+    index: 0
+  - key: event:/collect-bug
+    index: 1
+  - key: event:/pause
+    index: 2
+  - key: event:/spider-scuttering
+    index: 3
+  - key: event:/player-death
+    index: 4
+  - key: event:/web-zip
+    index: 5
+  - key: event:/player-land
+    index: 6
+  - key: event:/skateboard-rolling
+    index: 7
+  - key: event:/menu-confirm
+    index: 8
+  - key: event:/collect-coin
+    index: 9
+  - key: event:/menu-cancel
+    index: 10
+--- !u!114 &418364667657012695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/collect-coin
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/collect-coin
+  Guid:
+    Data1: -808058158
+    Data2: 1254355625
+    Data3: -471594349
+    Data4: -938911574
+  Banks:
+  - {fileID: 5277862947616582299}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 550
+--- !u!114 &1250999368898319348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/spider-scuttering
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/spider-scuttering
+  Guid:
+    Data1: 116548213
+    Data2: 1186865685
+    Data3: -1747975536
+    Data4: 944009621
+  Banks:
+  - {fileID: 5277862947616582299}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2500
+--- !u!114 &2955897286607135298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/player-death
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/player-death
+  Guid:
+    Data1: 351837056
+    Data2: 1235274351
+    Data3: -1936877677
+    Data4: -1969337957
+  Banks:
+  - {fileID: 5277862947616582299}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 950
 --- !u!114 &5277862947616582299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39,11 +288,92 @@ MonoBehaviour:
   Path: OneButtonGame-FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639134986794772966
+  lastModified: 639135138045338060
   FileSizes:
   - Name: Desktop
-    Value: 1074
+    Value: 135008
   Exists: 1
+--- !u!114 &6339705339165047637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/menu-confirm
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/menu-confirm
+  Guid:
+    Data1: -936781123
+    Data2: 1247546883
+    Data3: 1625116819
+    Data4: -1862525144
+  Banks:
+  - {fileID: 5277862947616582299}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 200
+--- !u!114 &6994206121235413881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/web-zip
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/web-zip
+  Guid:
+    Data1: -1978743678
+    Data2: 1134252911
+    Data3: -335085920
+    Data4: -1354769558
+  Banks:
+  - {fileID: 5277862947616582299}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
+--- !u!114 &7676469394329127851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/pause
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/pause
+  Guid:
+    Data1: 1946603358
+    Data2: 1287794856
+    Data3: -1254760515
+    Data4: 1983244889
+  Banks:
+  - {fileID: 5277862947616582299}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 250
 --- !u!114 &7771935489256472391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,8 +389,8 @@ MonoBehaviour:
   Path: OneButtonGame-FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639134986794804940
+  lastModified: 639135138045358066
   FileSizes:
   - Name: Desktop
-    Value: 724
+    Value: 1252
   Exists: 1
