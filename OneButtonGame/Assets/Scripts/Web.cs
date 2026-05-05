@@ -15,6 +15,11 @@ public class Web : MonoBehaviour
     private void Update()
     {
         sr.enabled = spriteEnabled;
+
+        if (spider.attached)
+        {
+            GetComponent<FMODUnity.StudioEventEmitter>().Play();
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -23,4 +28,5 @@ public class Web : MonoBehaviour
         spider.attached = false;
         spriteEnabled = false;
     }
+
 }

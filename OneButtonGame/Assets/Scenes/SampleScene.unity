@@ -297,6 +297,7 @@ GameObject:
   - component: {fileID: 491091323}
   - component: {fileID: 491091325}
   - component: {fileID: 491091326}
+  - component: {fileID: 491091327}
   m_Layer: 6
   m_Name: Web
   m_TagString: Untagged
@@ -437,6 +438,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Web
   spriteEnabled: 1
+--- !u!114 &491091327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491091321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1158421664
+      Data2: 1115061902
+      Data3: -975685187
+      Data4: -296780207
+    Path: event:/skateboard-rolling
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,6 +1069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Spider
   attached: 1
+  ceiling: {fileID: 0}
 --- !u!114 &719527143
 MonoBehaviour:
   m_ObjectHideFlags: 0

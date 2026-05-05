@@ -6,6 +6,7 @@ public class Spider : MonoBehaviour
     Web web;
     public bool attached = true;
     bool reAttaching = false;
+    public GameObject ceiling;
 
     void Start()
     {
@@ -37,6 +38,11 @@ public class Spider : MonoBehaviour
             {
                 reAttaching = false;
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GetComponent<FMODUnity.StudioEventEmitter>().Play();
         }
     }
 
