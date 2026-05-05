@@ -77,7 +77,8 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: 3880260191867693358}
   MinDistance: 1
   MaxDistance: 20
   Length: 3000
@@ -168,7 +169,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 7771935489256472391}
   cacheVersion: 131848
-  cacheTime: 639135748673688577
+  cacheTime: 639135831948033863
   SerializableEventsDict:
   - key: event:/web-snap
     index: 0
@@ -273,6 +274,32 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 950
+--- !u!114 &3880260191867693358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/skateboard-rolling/Skateboard
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: Skateboard
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0.5
+  ID:
+    data1: 2080991918
+    data2: 1383807064
+  Type: 0
+  IsGlobal: 0
+  Labels:
+  - NotAttached
+  - Attached
+  Exists: 1
 --- !u!114 &5277862947616582299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,10 +315,10 @@ MonoBehaviour:
   Path: OneButtonGame-FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639135748673667712
+  lastModified: 639135831948023790
   FileSizes:
   - Name: Desktop
-    Value: 135008
+    Value: 135552
   Exists: 1
 --- !u!114 &6339705339165047637
 MonoBehaviour:
@@ -389,8 +416,8 @@ MonoBehaviour:
   Path: OneButtonGame-FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639135748673688577
+  lastModified: 639135831948033863
   FileSizes:
   - Name: Desktop
-    Value: 1252
+    Value: 1304
   Exists: 1

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{67bf7f21-6502-4d50-88fa-de3e6403851b}">
+		<property name="name">
+			<value>Skateboard</value>
+		</property>
+		<relationship name="folder">
+			<destination>{13493db9-09dc-4587-9c30-97e453433bb2}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{09fc51cc-0aee-4c73-b3d3-dbd88b09793e}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{09fc51cc-0aee-4c73-b3d3-dbd88b09793e}">
+		<property name="initialValue">
+			<value>0.5</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>
